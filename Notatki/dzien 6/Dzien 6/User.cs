@@ -14,7 +14,7 @@ namespace Dzien_6
             this.Login = login;
             this.Password = password;
 
-
+            
         }
         public string Login { get; private set; }
         public string Password { get; private set; }
