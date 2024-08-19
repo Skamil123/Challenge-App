@@ -13,17 +13,6 @@ User user4 = new User("Damian", "2589");
 
 user1.AddScore(5);
 user1.AddScore(2);
-user1.AddScore(2);
-
-user2.AddScore(2);
-user2.AddScore(12);
-user2.AddScore(2);
-
-user3.AddScore(2);
-user3.AddScore(2);
-user3.AddScore(21);
-
-
-//var result = user1.Result;
-//Console.WriteLine(result);
-//var name = User.GameName;
+var result = user1.Result;
+Console.WriteLine(result);
+var name = User.GameName;

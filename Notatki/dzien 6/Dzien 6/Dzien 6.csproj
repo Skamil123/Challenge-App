@@ -8,4 +8,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="C:\Users\skami\OneDrive\Desktop\Projekty\Skamil123\Challenge-App\Notatki\Dzien 7\Program.cs" Link="Program.cs" />
+    <Compile Include="C:\Users\skami\OneDrive\Desktop\Projekty\Skamil123\Challenge-App\Notatki\Dzien 7\User.cs" Link="User.cs" />
+  </ItemGroup>
+
 </Project>

@@ -38,7 +38,6 @@ if(Employee.Result > maxResult)
     }
 }
 
-
 Console.WriteLine(userWithMaxResult.Name);
 Console.WriteLine(userWithMaxResult.LastName);
 Console.WriteLine("Wiek " + userWithMaxResult.Age);
