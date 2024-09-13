@@ -9,6 +9,10 @@ namespace Dzien_6
         private string password;
         // private string name;
 
+        public User(string login)
+        {
+            this.Login = login;
+        }
         public User(string login, string password)
         {
             this.Login = login;
