@@ -1,6 +1,9 @@
+using NUnit.Framework;
+using ChallengeApp;
+
 namespace ChallengeApp.Tests
 {
-    public class Tests
+    public class TestsUser
     {
     
 
@@ -12,21 +15,21 @@ namespace ChallengeApp.Tests
                 //arrage
 
                 var user = new Employee("Adam", "123");
-                user.AddScore(5);
-                user.AddScore(6);
-                user.AddScore(-10);
-                user.AddScore(-6);
+                user.AddGrade(5);
+                user.AddGrade(5);
+                user.AddGrade(5);
+                user.AddGrade(5);
 
                 //   int age1 = 10;
                 //   int age2 = 2;
                 //act
-                var result = user.Result;
+                var statistics = user.GetStatistics();
 
-                //  int result = age1 + age2;
-                //assert
-                Assert.AreEqual(-5, result);
-                //   Assert.AreEqual(12, result);
-            }
+            //  int result = age1 + age2;
+            //assert
+            Assert.AreEqual(5, statistics.Average);
+            //   Assert.AreEqual(12, result);
+        }
         
     }
 }
