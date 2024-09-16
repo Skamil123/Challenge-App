@@ -1,6 +1,6 @@
 ﻿
 
-using Dzien_6;
+using Dzien_9;
 using System.Runtime.Intrinsics.X86;
 
 namespace TestProject1.dzien_7

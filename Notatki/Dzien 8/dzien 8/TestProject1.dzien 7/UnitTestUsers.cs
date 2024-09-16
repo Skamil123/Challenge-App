@@ -1,4 +1,4 @@
-using Dzien_6;
+using Dzien_9;
 
 namespace TestProject1.dzien_7
 {
