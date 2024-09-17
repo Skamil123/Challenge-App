@@ -15,7 +15,52 @@
         public string Surname { get; private set; }
         public void AddGrade(float grade)
         {
-            this.grades.Add(grade);
+            if (grade >= 0 && grade <= 100)
+            {
+                this.grades.Add(grade);
+            }
+            else
+            {
+                Console.WriteLine("Invalid Data");
+            }
+        }
+        public void AddGrade(string grade)
+        {
+            if (float.TryParse(grade, out float result))
+            {
+                this.AddGrade(result);
+                //var value = float.Parse(grade);
+                // this.AddGrade(value);
+            }
+            else
+            {
+                Console.WriteLine("String is not float");
+            }
+
+        }
+        public void AddGrade(double grade)
+        {
+            if (grade >= 0 && grade <= 100)
+            {
+                this.grades.Add((float)grade);
+            }
+            else
+            {
+                Console.WriteLine("Double is not in range");
+            }
+
+        }
+        public void AddGrade(long grade)
+        {
+            if (grade >= 0 && grade <= 100)
+            {
+                this.grades.Add((float)grade);
+            }
+            else
+            {
+                Console.WriteLine("Long is not in range");
+            }
+
         }
         public Statistics GetStatistics()
         {
@@ -31,7 +76,7 @@
                 statistics.Average += grade;
 
             }
-            statistics.Average= statistics.Average / this.grades.Count; 
+            statistics.Average = statistics.Average / this.grades.Count;
             return statistics;
         }
     }
