@@ -28,7 +28,7 @@
         {
             if (float.TryParse(grade, out float result))
             {
-                this.AddGrade(result);
+                AddGrade(result);
                 //var value = float.Parse(grade);
                 // this.AddGrade(value);
             }
@@ -42,7 +42,7 @@
         {
             if (grade >= 0 && grade <= 100)
             {
-                this.grades.Add((float)grade);
+                grades.Add((float)grade);
             }
             else
             {
